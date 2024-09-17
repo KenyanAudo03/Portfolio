@@ -33,6 +33,6 @@ Feel free to reach out if you're interested in working together or if you have a
 
 - [GitHub](https://github.com/KenyanAudo03)
 - [LinkedIn](www.linkedin.com/in/victorowino)
-- [Twitter]([https://twitter.com/username](https://twitter.com/AudoWrld))
+- [Twitter](https://twitter.com/AudoWrld)
 
 Let's bring your ideas to life!
