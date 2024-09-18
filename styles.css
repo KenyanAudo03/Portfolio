@@ -335,6 +335,13 @@ main {
   overflow: hidden;
   background: var(--bg-gradient-onyx);
 }
+/* .avatar-box {
+  border-radius: 30px;
+}
+
+.avatar-box img {
+  width: 120px;
+} */
 
 .info-content .name {
   color: var(--white-2);
@@ -941,6 +948,7 @@ main {
   transform: rotate(0.5turn);
 }
 
+
 .select-list {
   background: var(--eerie-black-2);
   position: absolute;
@@ -950,16 +958,16 @@ main {
   border: 1px solid var(--jet);
   border-radius: 14px;
   z-index: 2;
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   pointer-events: none;
-  transition: 0.15s ease-in-out;
+  transition: opacity 0.15s ease-in-out, visibility 0.15s ease-in-out;
 }
 
-.filter-select.active + .select-list {
+.select-list.active {
   opacity: 1;
   visibility: visible;
-  pointer-events: all;
+  pointer-events: auto;
 }
 
 .select-item button {
@@ -971,12 +979,13 @@ main {
   width: 100%;
   padding: 8px 10px;
   border-radius: 8px;
+  cursor: pointer; 
 }
+
 
 .select-item button:hover {
-  --eerie-black-2: hsl(240, 2%, 20%);
+  background: hsl(240, 2%, 20%);
 }
-
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -1009,7 +1018,7 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 200px;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -1415,7 +1424,11 @@ textarea.form-input::-webkit-resizer {
   }
 
   .avatar-box img {
-    width: 120px;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    object-fit: cover;
+    background: var(--bg-gradient-onyx);
   }
 
   .info-content .name {
