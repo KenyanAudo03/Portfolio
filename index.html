@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Victor Owino Personal Portfolio</title>
-    <link
-      rel="shortcut icon"
-      href="portfolio.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="portfolio.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,7 +33,7 @@
           <div class="info-content">
             <h1 class="name" title="Richard hanrick">Victor OWino</h1>
 
-            <p class="title">Web developer</p>
+            <p class="title">Web Developer</p>
           </div>
 
           <button class="info_more-btn" data-sidebar-btn>
@@ -710,7 +706,7 @@
           <section class="projects">
             <ul class="filter-list">
               <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
+                <button data-filter-btn>All</button>
               </li>
               <li class="filter-item">
                 <button data-filter-btn>Web Development</button>
@@ -762,7 +758,7 @@
                 data-filter-item
                 data-category="web development"
               >
-                <a href="#">
+                <a href="https://auweather.onrender.com/" target="_blank">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -782,7 +778,7 @@
                 data-filter-item
                 data-category="web development"
               >
-                <a href="#">
+                <a href="https://audowrld.pythonanywhere.com/" target="_blank">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -798,7 +794,10 @@
                 data-filter-item
                 data-category="web development"
               >
-                <a href="#">
+                <a
+                  href="https://kenyanaudo03.github.io/WeatherApp/"
+                  target="_blank"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -818,7 +817,7 @@
                 data-filter-item
                 data-category="web development"
               >
-                <a href="#">
+                <a href="https://github.com/KenyanAudo03/" target="_blank">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -836,7 +835,7 @@
                 data-filter-item
                 data-category="web design"
               >
-                <a href="#">
+                <a href="https://auweather.onrender.com/" target="_blank">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -856,7 +855,7 @@
                 data-filter-item
                 data-category="web design"
               >
-                <a href="#">
+                <a href="https://audowrld.pythonanywhere.com/" target="_blank">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -918,7 +917,7 @@
                 data-filter-item
                 data-category="app development"
               >
-                <a href="#">
+                <a href="https://auweather.onrender.com/about" target="_blank">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -1308,7 +1307,9 @@
         const filterButtons = document.querySelectorAll("[data-filter-btn]");
         const selectItems = document.querySelectorAll("[data-select-item]");
         const projectItems = document.querySelectorAll("[data-filter-item]");
-        const allButton = document.querySelector("[data-filter-btn].active");
+        const filterSelectButton = document.querySelector("[data-select]");
+        const selectValue = document.querySelector("[data-select-value]");
+        const selectList = document.querySelector(".select-list");
 
         // Function to show all projects
         function showAllProjects() {
@@ -1346,6 +1347,10 @@
             } else {
               filterProjects(category);
             }
+
+            // Update the select button's text for small screens
+            selectValue.textContent = this.textContent;
+            selectList.classList.remove("active");
           });
         });
 
@@ -1368,46 +1373,43 @@
               filterProjects(category);
             }
 
+            // Update the select button's text
+            selectValue.textContent = this.textContent;
+
             // Close the select dropdown
-            document.querySelector("[data-select]").classList.remove("active");
-            document.querySelector(".select-value").textContent =
-              this.textContent;
+            selectList.classList.remove("active");
           });
+        });
+
+        // Toggle select list visibility when the filter select button is clicked
+        filterSelectButton.addEventListener("click", function () {
+          selectList.classList.toggle("active");
         });
 
         // Show all projects by default on page load
         showAllProjects();
       });
     </script>
+
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          // Select the form and its elements
-          const form = document.querySelector('[data-form]');
-          const inputs = form.querySelectorAll('[data-form-input]');
-          const submitButton = form.querySelector('[data-form-btn]');
-      
-          // Function to check if all inputs are filled
-          function checkFormValidity() {
-            let allFilled = true;
-            inputs.forEach(input => {
-              if (input.value.trim() === '') {
-                allFilled = false;
-              }
-            });
-      
-            // Enable or disable the submit button based on form validity
-            submitButton.disabled = !allFilled;
-          }
-      
-          // Add event listeners to all input fields
-          inputs.forEach(input => {
-            input.addEventListener('input', checkFormValidity);
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector("[data-form]");
+        const inputs = form.querySelectorAll("[data-form-input]");
+        const submitButton = form.querySelector("[data-form-btn]");
+        function checkFormValidity() {
+          let allFilled = true;
+          inputs.forEach((input) => {
+            if (input.value.trim() === "") {
+              allFilled = false;
+            }
           });
-      
-          // Initial check in case the form is pre-filled (optional)
-          checkFormValidity();
+          submitButton.disabled = !allFilled;
+        }
+        inputs.forEach((input) => {
+          input.addEventListener("input", checkFormValidity);
         });
-      </script>
-      
+        checkFormValidity();
+      });
+    </script>
   </body>
 </html>
