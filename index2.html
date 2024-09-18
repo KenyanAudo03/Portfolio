@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V Card- personal Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="portfolio.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="Polish_20230715_174839682.jpg"
+              alt="Victor Owino"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Victor OWino</h1>
+
+            <p class="title">Web developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:owinovictor933@yahoo.com" class="contact-link"
+                  >owinovictor933@yahoo.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+254703853259" class="contact-link"
+                  >+254 703853259</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">October 16, 2004</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Mombasa Road, Nairobi, KE</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://twitter.com/AudoWrld"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/wrldaudo/"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/victorowino/"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="bx bxl-linkedin"></i>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://wa.me/254703853259"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="bx bxl-whatsapp"></i>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://github.com/KenyanAudo03"
+                class="social-link"
+                target="_blank"
+              >
+                <i class="bx bxl-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" id="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm from Nairobi, Kenya, studying at JOOUST University as a
+              second-year student. I am a web developer passionate about
+              creating functional and user-friendly websites.
+            </p>
+
+            <p>
+              My job is to build your website so that it is functional and
+              user-friendly but at the same time attractive. Moreover, I add a
+              personal touch to your product and make sure that it is
+              eye-catching and easy to use. My aim is to bring across your
+              message and identity in the most creative way. I have created web
+              designs for various projects and clients.
+            </p>
+          </section>
+
+          <!--
+  - service
+-->
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="design.svg" alt="Web design icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="dev.svg" alt="Web development icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of websites at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="os.svg" alt="OS installation icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">OS installation</h4>
+
+                  <p class="service-item-text">
+                    Professional installation and configuration of operating
+                    systems.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="sec.svg" alt="Cyber security icon" width="40" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Cyber Security</h4>
+
+                  <p class="service-item-text">
+                    Ensuring the safety and security of your digital assets with
+                    cutting-edge cybersecurity solutions.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+  - testimonials
+-->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="image1.png"
+                      alt="Daniel Lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Micheal Aywa
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Victor helped me install both Windows and Linux on my
+                      machines. His deep knowledge of operating systems and
+                      professionalism made the process quick and seamless.
+                      Highly recommend him for any technical setup!
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="image2.png"
+                      alt="Jessica Miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Salome Wahudu
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Victor was instrumental in building the AuWeather website
+                      for our company. His attention to detail and ability to
+                      turn complex weather data into a user-friendly interface
+                      exceeded our expectations. We are thrilled with the
+                      result!
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="image3.svg"
+                      alt="Emily Evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Johnstonne Munala
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Victor designed the Notewave website, a note-taking
+                      platform we’ve launched recently. His creativity and
+                      technical skills were key to making the site both
+                      aesthetically pleasing and highly functional. We're very
+                      happy with the result!
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="image4.svg"
+                      alt="Henry William"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Fidel Eluid
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Victor's expertise in Linux and cybersecurity helped
+                      secure our company's network infrastructure. His proactive
+                      approach and in-depth knowledge of Linux systems make him
+                      an invaluable asset to any cybersecurity project.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+  - testimonials modal
+-->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="image1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Micheal Aywa</h4>
+
+                <time datetime="2021-06-14">16 June, 2024</time>
+
+                <div data-modal-text>
+                  <p>
+                    Victor Owino was instrumental in developing the Notewave
+                    website, a note-taking platform we recently launched. His
+                    expertise in web design and development ensured that the
+                    site is not only visually appealing but also highly
+                    functional. Additionally, his skills in OS installation and
+                    cyber security have been a great asset. We are thrilled with
+                    the outcome and look forward to collaborating again in the
+                    future.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+  - clients
+-->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img src="logo1.svg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="logo2.svg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="logo3.svg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="logo4.svg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="logo5.svg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="logo6.svg" alt="client logo" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="resume" id="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  University schoolof Information and Innovativation System
+                </h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Currently pursuing studies in Computer Security and Forensics,
+                  focusing on advanced techniques for safeguarding digital
+                  information and investigating cyber incidents. The curriculum
+                  includes hands-on training in threat detection, vulnerability
+                  assessment, and forensic analysis to ensure comprehensive
+                  protection and recovery in the digital realm.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Sagam Secondary School</h4>
+
+                <span>2018 — 2022</span>
+
+                <p class="timeline-text">
+                  Completed high school education with a comprehensive
+                  curriculum including Mathematics, English, Kiswahili, History,
+                  Physics, Chemistry, Agriculture, and Biology. Gained a solid
+                  foundation in both the sciences and humanities, which provided
+                  a well-rounded educational experience and critical thinking
+                  skills.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Lang'atta Road Primary School
+                </h4>
+
+                <span>2010 — 2018</span>
+
+                <p class="timeline-text">
+                  Completed primary school education with a focus on Kiswahili,
+                  English, Christian Religious Education (CRE), Mathematics,
+                  Social Studies, and Science. Developed foundational skills in
+                  these core subjects, fostering a strong base for future
+                  academic pursuits.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Operating Systems Specialist
+                </h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Specializing in the installation, configuration, and
+                  management of various operating systems, including Windows and
+                  Linux. Ensuring optimal performance and security of systems.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Designer</h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Designing visually appealing and user-friendly websites with a
+                  focus on creating engaging and intuitive interfaces. Bringing
+                  creative solutions to web design challenges.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Developer</h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Developing and maintaining functional and dynamic websites.
+                  Utilizing modern technologies and programming languages to
+                  build robust web applications.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Cyber Security Specialist
+                </h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Focusing on securing systems and networks against cyber
+                  threats. Implementing security measures and conducting
+                  forensic analysis to safeguard digital assets.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My Skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Design</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Development (HTML, CSS, JS)</h5>
+                  <data value="85">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Backend Development (Python Flask)</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">MySQL</h5>
+                  <data value="65">65%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">XAMPP</h5>
+                  <data value="60">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">PHP</h5>
+                  <data value="55">55%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 55%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="portfolio" id="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web Development</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web Design</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>OS Installed</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>App Development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Development</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Design</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>OS Installed</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>App Development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <!-- Web Development -->
+              <li
+                class="project-item"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="small_screens.svg"
+                      alt="AuWeather"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">AuWeather</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="notewave.png" alt="NoteWave" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">NoteWave</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="weather.jpeg"
+                      alt="Simple Weather Web"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Simple Weather Web</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="car.png" alt="Car Game" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">Car Game</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <!-- Web Design -->
+              <li
+                class="project-item"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="small_screens.svg"
+                      alt="AuWeather"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">AuWeather</h3>
+                  <p class="project-category">Web Design</p>
+                </a>
+              </li>
+              <li
+                class="project-item"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="notewave.png" alt="NoteWave" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">NoteWave</h3>
+                  <p class="project-category">Web Design</p>
+                </a>
+              </li>
+
+              <!-- OS Installed -->
+              <li
+                class="project-item"
+                data-filter-item
+                data-category="os installed"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="windows.png"
+                      alt="Windows Installation"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Windows Installation (10, 11)</h3>
+                  <p class="project-category">OS Installed</p>
+                </a>
+              </li>
+              <li
+                class="project-item"
+                data-filter-item
+                data-category="os installed"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="kali.jpeg"
+                      alt="Linux Installation"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    Linux Installation (Kali, Ubuntu)
+                  </h3>
+                  <p class="project-category">OS Installed</p>
+                </a>
+              </li>
+
+              <!-- App Development -->
+              <li
+                class="project-item"
+                data-filter-item
+                data-category="app development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="small_screens.svg"
+                      alt="AuWeather"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">AuWeather</h3>
+                  <p class="project-category">App Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item"
+                data-filter-item
+                data-category="app development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="notewave.png" alt="NoteWave" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">NoteWave</h3>
+                  <p class="project-category">App Development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" id="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <!-- Post 1 -->
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="post1.jpg"
+                      alt="The Evolution of Web Design: 2023 Trends"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Web Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-03-15">Mar 15, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The Evolution of Web Design: 2023 Trends
+                    </h3>
+
+                    <p class="blog-text">
+                      Explore the latest trends in web design for 2023,
+                      including emerging techniques and technologies that are
+                      shaping the future of the digital landscape.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Post 2 -->
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="post2.jpg"
+                      alt="Mastering Web Development with HTML, CSS, and JavaScript"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Web Development</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-04-20">Apr 20, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Mastering Web Development with HTML, CSS, and JavaScript
+                    </h3>
+
+                    <p class="blog-text">
+                      A comprehensive guide to mastering the core technologies
+                      of web development: HTML, CSS, and JavaScript. Tips, best
+                      practices, and common pitfalls to avoid.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Post 3 -->
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="post4.jpg"
+                      alt="Building Secure Web Applications: Best Practices"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Web Security</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-05-10">May 10, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Building Secure Web Applications: Best Practices
+                    </h3>
+
+                    <p class="blog-text">
+                      Learn about best practices for developing secure web
+                      applications, including common vulnerabilities and how to
+                      protect your applications from threats.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Post 4 -->
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="post3.jpg"
+                      alt="The Future of Web Design: Innovations to Watch"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Web Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-06-18">Jun 18, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The Future of Web Design: Innovations to Watch
+                    </h3>
+
+                    <p class="blog-text">
+                      A look at the upcoming innovations in web design and how
+                      they might change the way we create and interact with
+                      websites in the near future.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Post 5 -->
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="post5.jpg"
+                      alt="Optimizing Web Performance: Tips and Tools"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Web Performance</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-07-25">Jul 25, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Optimizing Web Performance: Tips and Tools
+                    </h3>
+
+                    <p class="blog-text">
+                      Discover strategies and tools for optimizing web
+                      performance, including techniques for faster load times
+                      and better user experiences.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Post 6 -->
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="post6.jpg"
+                      alt="Creating Responsive Web Designs"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Web Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023-08-12">Aug 12, 2023</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Creating Responsive Web Designs
+                    </h3>
+
+                    <p class="blog-text">
+                      Tips and techniques for designing websites that work
+                      seamlessly across all devices and screen sizes.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="contact" id="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63820.350137087706!2d36.786922025594045!3d-1.3122816608483812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x182f11aa51436975%3A0xd9b3c93d8ffbe5df!2sKongoni%20Primary%20School%2C%20Nairobi!3m2!1d-1.312282!2d36.828122!4m0!5e0!3m2!1sen!2ske!4v1726663895310!5m2!1sen!2ske"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="d523f072-354d-4f39-aa67-3a584377acca"
+              />
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      "use strict";
+      const elementToggleFunc = function (elem) {
+        elem.classList.toggle("active");
+      };
+      const sidebar = document.querySelector("[data-sidebar]");
+      const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+      sidebarBtn.addEventListener("click", function () {
+        elementToggleFunc(sidebar);
+      });
+      const testimonialsItem = document.querySelectorAll(
+        "[data-testimonials-item]"
+      );
+      const modalContainer = document.querySelector("[data-modal-container]");
+      const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+      const overlay = document.querySelector("[data-overlay]");
+      const modalImg = document.querySelector("[data-modal-img]");
+      const modalTitle = document.querySelector("[data-modal-title]");
+      const modalText = document.querySelector("[data-modal-text]");
+      const testimonialsModalFunc = function () {
+        modalContainer.classList.toggle("active");
+        overlay.classList.toggle("active");
+      };
+      for (let i = 0; i < testimonialsItem.length; i++) {
+        testimonialsItem[i].addEventListener("click", function () {
+          modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+          modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+          modalTitle.innerHTML = this.querySelector(
+            "[data-testimonials-title]"
+          ).innerHTML;
+          modalText.innerHTML = this.querySelector(
+            "[data-testimonials-text]"
+          ).innerHTML;
+
+          testimonialsModalFunc();
+        });
+      }
+      modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+      overlay.addEventListener("click", testimonialsModalFunc);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll("[data-nav-link]");
+        const articles = document.querySelectorAll("article");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            navLinks.forEach((btn) => btn.classList.remove("active"));
+            link.classList.add("active");
+            const targetPage = link.textContent.trim().toLowerCase();
+            articles.forEach((article) => (article.style.display = "none"));
+            const targetArticle = document.getElementById(targetPage);
+            if (targetArticle) {
+              targetArticle.style.display = "block";
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll("[data-filter-btn]");
+        const selectItems = document.querySelectorAll("[data-select-item]");
+        const projectItems = document.querySelectorAll("[data-filter-item]");
+        const allButton = document.querySelector("[data-filter-btn].active");
+
+        // Function to show all projects
+        function showAllProjects() {
+          projectItems.forEach((item) => {
+            item.classList.add("active");
+          });
+        }
+
+        // Function to filter projects based on category
+        function filterProjects(category) {
+          projectItems.forEach((item) => {
+            if (
+              category === "all" ||
+              item.getAttribute("data-category") === category
+            ) {
+              item.classList.add("active");
+            } else {
+              item.classList.remove("active");
+            }
+          });
+        }
+
+        // Event listener for filter buttons
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const category = this.textContent.toLowerCase();
+
+            // Remove active class from all filter buttons and add it to the clicked button
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            // Filter projects based on the selected category
+            if (category === "all") {
+              showAllProjects();
+            } else {
+              filterProjects(category);
+            }
+          });
+        });
+
+        // Event listener for select items
+        selectItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            const category = this.textContent.toLowerCase();
+
+            // Remove active class from all filter buttons and add it to the selected button
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            const selectedButton = [...filterButtons].find(
+              (btn) => btn.textContent.toLowerCase() === category
+            );
+            if (selectedButton) selectedButton.classList.add("active");
+
+            // Filter projects based on the selected category
+            if (category === "all") {
+              showAllProjects();
+            } else {
+              filterProjects(category);
+            }
+
+            // Close the select dropdown
+            document.querySelector("[data-select]").classList.remove("active");
+            document.querySelector(".select-value").textContent =
+              this.textContent;
+          });
+        });
+
+        // Show all projects by default on page load
+        showAllProjects();
+      });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // Select the form and its elements
+          const form = document.querySelector('[data-form]');
+          const inputs = form.querySelectorAll('[data-form-input]');
+          const submitButton = form.querySelector('[data-form-btn]');
+      
+          // Function to check if all inputs are filled
+          function checkFormValidity() {
+            let allFilled = true;
+            inputs.forEach(input => {
+              if (input.value.trim() === '') {
+                allFilled = false;
+              }
+            });
+      
+            // Enable or disable the submit button based on form validity
+            submitButton.disabled = !allFilled;
+          }
+      
+          // Add event listeners to all input fields
+          inputs.forEach(input => {
+            input.addEventListener('input', checkFormValidity);
+          });
+      
+          // Initial check in case the form is pre-filled (optional)
+          checkFormValidity();
+        });
+      </script>
+      
+  </body>
+</html>
